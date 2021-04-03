@@ -1,0 +1,30 @@
+<h2>Fotos de {{ titulo }}</h2>
+
+<div *ngIf="!fotos; else exibeFoto" class="nenhuma-foto">Nenhuma foto</div>
+<ng-template #exibeFoto>
+  <img *ngIf="fotos" [src]="fotos[posicao]" />
+</ng-template>
+
+<footer *ngIf="fotos">
+  <div class="info">Foto {{ posicao + 1 }} de {{ fotos.length }}</div>
+  <div>
+    <button (click)="onClick('primeira')" [disabled]="posicao == 0">
+      <fa-icon [icon]="iconePrimeira"></fa-icon>
+    </button>
+    <button (click)="onClick('anterior')" [disabled]="posicao == 0">
+      <fa-icon [icon]="iconeAnterior"></fa-icon>
+    </button>
+    <button
+      (click)="onClick('proxima')"
+      [disabled]="posicao == fotos.length - 1"
+    >
+      <fa-icon [icon]="iconeProxima"></fa-icon>
+    </button>
+    <button
+      (click)="onClick('ultima')"
+      [disabled]="posicao == fotos.length - 1"
+    >
+      <fa-icon [icon]="iconeUltima"></fa-icon>
+    </button>
+  </div>
+</footer>

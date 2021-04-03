@@ -1,4 +1,18 @@
-# Galeria
+# Galeria de Fotos em Angular
+
+Meu primeiro projeto em Angular.
+
+Trabalho prático do Módulo 3 do <b>Bootcamp de Desenvolvimento Web Front End</b> do Instituto de Gestão em Tecnologia da Informação - IGTI.
+
+Neste trabalho prático, foram exercitados os conceitos de:
+
+- Criar uma aplicação Angular com Angular CLI.
+- Criar componentes e templates.
+- Utilizar data/event bindings.
+- Utilizar diretivas estruturais.
+- Estilizar componentes.
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
